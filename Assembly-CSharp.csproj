@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{2E58AA98-80AC-C9F3-C19F-076BB3EE9E63}</ProjectGuid>
+    <ProjectGuid>{CE47EF29-33DE-D783-8550-8D88E9933232}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -58,6 +58,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\CameraController.cs" />
+    <Compile Include="Assets\Scripts\MenuScript.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
