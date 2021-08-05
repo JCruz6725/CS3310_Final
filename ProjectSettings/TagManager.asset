@@ -6,6 +6,12 @@ TagManager:
   tags:
   - LAVA
   - Health_active
+  - Killbox
+  - Enemy
+  - Ground
+  - Lava
+  - Poison
+  - Heart
   layers:
   - Default
   - TransparentFX

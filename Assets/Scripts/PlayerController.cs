@@ -36,29 +36,29 @@ public class PlayerController : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("LAVA"))
+        if (collision.gameObject.CompareTag("Lava"))
         {
             PlayerHealth--;
         }
 
-        if (collision.gameObject.CompareTag("POISON"))
+        if (collision.gameObject.CompareTag("Poison"))
         {
             PlayerHealth--;
         }
 
 
-        if (collision.gameObject.CompareTag("HEART"))
+        if (collision.gameObject.CompareTag("Heart"))
         {
             collision.gameObject.SetActive(false);
             PlayerHealth++;
         }
 
-        if (collision.gameObject.CompareTag("HEART"))
-        {
-            collision.gameObject.SetActive(false);
-            PlayerHealth++;
-        }
 
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            
+            PlayerHealth--;
+        }
 
 
 
@@ -129,7 +129,7 @@ public class PlayerController : MonoBehaviour
 
 
 
-        Debug.Log(PlayerHealth);
+        //Debug.Log(PlayerHealth);
 
 
 
