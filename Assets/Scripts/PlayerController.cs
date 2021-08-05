@@ -17,12 +17,40 @@ public class PlayerController : MonoBehaviour
     private Animator anim;
     private SpriteRenderer theSR;
 
+    public int PlayerHealth; 
+
+
+
+
+
     // Start is called before the first frame update
     void Start()
     {
         anim = GetComponent<Animator>();
         theSR = GetComponent<SpriteRenderer>();
+
+        PlayerHealth = 10; 
+
+
     }
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("LAVA"))
+        {
+            PlayerHealth--;
+        }
+    }
+
+   
+
+    private void FixedUpdate()
+    {
+        
+    }
+
+
+
 
     // Update is called once per frame
     void Update()
@@ -60,6 +88,12 @@ public class PlayerController : MonoBehaviour
         {
             theSR.flipX = false;
         }
+
+        Debug.Log(PlayerHealth);
+
+
+
+
 
         anim.SetFloat("moveSpeed", Mathf.Abs(theRB.velocity.x));
         anim.SetBool("isGrounded", isGrounded);
