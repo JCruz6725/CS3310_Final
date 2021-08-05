@@ -57,8 +57,8 @@ public class SnakeBehavior : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (movement_direction == true) { snake.velocity(10, 0); }
-        else if (movement_direction == false) { }
+        //if (movement_direction == true) { snake.velocity(10, 0); }
+        //else if (movement_direction == false) { }
 
     }
 }
