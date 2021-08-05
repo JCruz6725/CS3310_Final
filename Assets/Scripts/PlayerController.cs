@@ -64,9 +64,20 @@ public class PlayerController : MonoBehaviour
 
     }
 
-   
+   void playerLoseHealth()
+    {
+        PlayerHealth--;
+        // some algorithm that updates ui.
+    }
 
-    private void FixedUpdate()
+    void playerGainHealth()
+    {
+        PlayerHealth++;
+        // Update UI
+    }
+
+
+    void FixedUpdate()
     {
         
     }
