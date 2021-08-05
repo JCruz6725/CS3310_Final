@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - LAVA
+  - Health_active
   layers:
   - Default
   - TransparentFX

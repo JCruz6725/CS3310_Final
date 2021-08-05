@@ -19,7 +19,7 @@ public class PlayerController : MonoBehaviour
 
     public int PlayerHealth; 
 
-
+    
 
 
 
@@ -29,7 +29,7 @@ public class PlayerController : MonoBehaviour
         anim = GetComponent<Animator>();
         theSR = GetComponent<SpriteRenderer>();
 
-        PlayerHealth = 10; 
+        PlayerHealth = 5; 
 
 
     }
@@ -40,6 +40,28 @@ public class PlayerController : MonoBehaviour
         {
             PlayerHealth--;
         }
+
+        if (collision.gameObject.CompareTag("POISON"))
+        {
+            PlayerHealth--;
+        }
+
+
+        if (collision.gameObject.CompareTag("HEART"))
+        {
+            collision.gameObject.SetActive(false);
+            PlayerHealth++;
+        }
+
+        if (collision.gameObject.CompareTag("HEART"))
+        {
+            collision.gameObject.SetActive(false);
+            PlayerHealth++;
+        }
+
+
+
+
     }
 
    
@@ -88,6 +110,13 @@ public class PlayerController : MonoBehaviour
         {
             theSR.flipX = false;
         }
+
+
+
+        
+
+
+
 
         Debug.Log(PlayerHealth);
 
