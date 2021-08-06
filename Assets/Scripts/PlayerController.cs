@@ -20,6 +20,7 @@ public class PlayerController : MonoBehaviour
 
 
     public GameObject[] PlayerHealthUI = new GameObject[5];
+    public GameObject gameOverText;
 
 
 
@@ -85,7 +86,10 @@ public class PlayerController : MonoBehaviour
 
     }
 
-
+    void gameOver()
+    {
+        gameOverText.gameObject.SetActive(true);
+    }
 
     void playerLoseHealth()
     {
@@ -95,6 +99,7 @@ public class PlayerController : MonoBehaviour
             if (PlayerHealthUI[i].gameObject.activeSelf)
             {
                 PlayerHealthUI[i].gameObject.SetActive(false);
+                if (i == 4) { gameOver(); this.gameObject.SetActive(false); }
                 break;
             }
         }
