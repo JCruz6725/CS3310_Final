@@ -1011,11 +1011,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2896205468937151057, guid: c15dc3adbc5f7d348aea73eb5b41bed3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.766298
+      value: -7.93
       objectReference: {fileID: 0}
     - target: {fileID: 2896205468937151057, guid: c15dc3adbc5f7d348aea73eb5b41bed3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.45
+      value: 2.73
       objectReference: {fileID: 0}
     - target: {fileID: 2896205468937151057, guid: c15dc3adbc5f7d348aea73eb5b41bed3, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2050,6 +2050,7 @@ MonoBehaviour:
   movement_direction: 0
   speed: 0
   snakeHP: 0
+  snake: {fileID: 0}
 --- !u!1 &1911901136
 GameObject:
   m_ObjectHideFlags: 0
