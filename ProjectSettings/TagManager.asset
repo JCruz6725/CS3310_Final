@@ -12,6 +12,8 @@ TagManager:
   - Lava
   - Poison
   - Heart
+  - Wall
+  - Dagger
   layers:
   - Default
   - TransparentFX
