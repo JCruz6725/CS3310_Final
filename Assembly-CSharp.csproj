@@ -57,10 +57,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\MenuScript.cs" />
+    <Compile Include="Assets\Scripts\EmemyScripts\GroundEnemyBehaviour.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
-    <Compile Include="Assets\Scripts\GroundEnemyBehaviour.cs" />
     <Compile Include="Assets\Scripts\CameraController.cs" />
-    <Compile Include="Assets\Scripts\GroundEnemyBehavior.cs" />
+    <Compile Include="Assets\Scripts\EmemyScripts\ColliderScrips\DaggerDamage.cs" />
+    <Compile Include="Assets\Scripts\EmemyScripts\ColliderScrips\WallBouncer.cs" />
+    <Compile Include="Assets\Scripts\PlayerUI.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

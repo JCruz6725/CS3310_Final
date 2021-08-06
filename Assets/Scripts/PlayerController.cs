@@ -54,17 +54,24 @@ public class PlayerController : MonoBehaviour
         }
 
 
-        if (collision.gameObject.CompareTag("Enemy"))
-        {
-            
-            PlayerHealth--;
-        }
 
 
 
     }
 
-   void playerLoseHealth()
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            
+            PlayerHealth--;
+            collision.gameObject.SetActive(false);
+        }
+    }
+
+
+    void playerLoseHealth()
     {
         PlayerHealth--;
         // some algorithm that updates ui.
