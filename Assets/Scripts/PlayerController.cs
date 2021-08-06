@@ -17,9 +17,9 @@ public class PlayerController : MonoBehaviour
     private Animator anim;
     private SpriteRenderer theSR;
 
-    public int PlayerHealth; 
 
-    
+
+    public GameObject[] PlayerHealthUI = new GameObject[5];
 
 
 
@@ -29,7 +29,7 @@ public class PlayerController : MonoBehaviour
         anim = GetComponent<Animator>();
         theSR = GetComponent<SpriteRenderer>();
 
-        PlayerHealth = 5; 
+ 
 
 
     }
@@ -38,21 +38,13 @@ public class PlayerController : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Lava"))
         {
-            PlayerHealth--;
+            playerLoseHealth();
         }
 
         if (collision.gameObject.CompareTag("Poison"))
         {
-            PlayerHealth--;
+            playerLoseHealth();
         }
-
-
-        if (collision.gameObject.CompareTag("Heart"))
-        {
-            collision.gameObject.SetActive(false);
-            PlayerHealth++;
-        }
-
 
 
 
@@ -61,35 +53,65 @@ public class PlayerController : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        
+
         if (collision.gameObject.CompareTag("Enemy"))
         {
-            
-            PlayerHealth--;
+            playerLoseHealth();
+
             collision.gameObject.SetActive(false);
+                
+
         }
+
+        if (collision.gameObject.CompareTag("Heart"))
+        {
+            playerGainHealth();
+
+
+            collision.gameObject.SetActive(false);
+            
+
+
+
+
+
+        }
+
+
+
+
+
+
+
     }
+
 
 
     void playerLoseHealth()
     {
-        PlayerHealth--;
-        // some algorithm that updates ui.
+
+        for (int i = 0; i < 5; i++)
+        {
+            if (PlayerHealthUI[i].gameObject.activeSelf)
+            {
+                PlayerHealthUI[i].gameObject.SetActive(false);
+                break;
+            }
+        }
     }
 
     void playerGainHealth()
     {
-        PlayerHealth++;
-        // Update UI
+
+        for (int i = 4; i > -1; i--)
+        {
+            if (!PlayerHealthUI[i].gameObject.activeSelf)
+            {
+                PlayerHealthUI[i].gameObject.SetActive(true);
+                break;
+            }
+        }
     }
-
-
-    void FixedUpdate()
-    {
-        
-    }
-
-
 
 
     // Update is called once per frame
@@ -128,19 +150,6 @@ public class PlayerController : MonoBehaviour
         {
             theSR.flipX = false;
         }
-
-
-
-        
-
-
-
-
-        //Debug.Log(PlayerHealth);
-
-
-
-
 
         anim.SetFloat("moveSpeed", Mathf.Abs(theRB.velocity.x));
         anim.SetBool("isGrounded", isGrounded);
