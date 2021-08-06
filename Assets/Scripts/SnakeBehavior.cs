@@ -45,9 +45,17 @@ public class SnakeBehavior : MonoBehaviour
         }
         if (collision.gameObject.CompareTag("Player"))
         {
-            Debug.Log("!!!!!!!!!!!!!!");
+            Debug.Log(" ");
 
         }
+
+
+        if (collision.gameObject.CompareTag("Dagger"))
+        {
+            Debug.Log("Hit");
+
+        }
+
 
 
 
