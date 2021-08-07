@@ -56,13 +56,13 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\PlayerUI.cs" />
+    <Compile Include="Assets\Scripts\EmemyScripts\ColliderScrips\DaggerDamage.cs" />
     <Compile Include="Assets\Scripts\MenuScript.cs" />
+    <Compile Include="Assets\Scripts\EmemyScripts\ColliderScrips\WallBouncer.cs" />
     <Compile Include="Assets\Scripts\EmemyScripts\GroundEnemyBehaviour.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\CameraController.cs" />
-    <Compile Include="Assets\Scripts\EmemyScripts\ColliderScrips\DaggerDamage.cs" />
-    <Compile Include="Assets\Scripts\EmemyScripts\ColliderScrips\WallBouncer.cs" />
-    <Compile Include="Assets\Scripts\PlayerUI.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
