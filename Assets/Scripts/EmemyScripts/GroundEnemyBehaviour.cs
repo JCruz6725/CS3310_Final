@@ -36,9 +36,25 @@ public class GroundEnemyBehaviour : MonoBehaviour
             snakeHP--;
             //Debug.Log("snake -1 hp");
         }
+
+
     }
 
-     void FixedUpdate()
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Dagger"))
+        {
+            snakeHP--;
+            collision.gameObject.SetActive(false);
+        }
+    }
+
+
+
+
+
+
+    void FixedUpdate()
     {
         if (movement_direction == true) { this.transform.Translate(this.transform.right / 30) ; }
         else if (movement_direction == false) { this.transform.Translate(-this.transform.right / 30) ;  }

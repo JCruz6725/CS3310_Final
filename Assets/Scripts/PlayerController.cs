@@ -22,6 +22,7 @@ public class PlayerController : MonoBehaviour
 
     public GameObject[] PlayerHealthUI = new GameObject[5];
     public GameObject gameOverText;
+    public Rigidbody2D Dagger_Projectile;
 
 
 
@@ -63,6 +64,10 @@ public class PlayerController : MonoBehaviour
     void gameOver()
     {
         gameOverText.gameObject.SetActive(true);
+        
+
+
+
     }
 
     void playerLoseHealth()
@@ -93,8 +98,27 @@ public class PlayerController : MonoBehaviour
     }
 
 
-    void throwDagge ( )
+    void throwDagger ( )
     {
+
+        if (Input.GetKeyDown(KeyCode.Mouse0))
+        {
+            float x, y, z;
+
+            x = this.gameObject.transform.position.x + 1f;
+            y = this.gameObject.transform.position.y;
+            z = this.gameObject.transform.position.z;
+
+            Vector3 player_position = new Vector3(x, y, z);
+
+            
+            Rigidbody2D projectile = Instantiate(Dagger_Projectile, player_position, Quaternion.identity);
+            
+            
+            projectile.velocity = transform.right * 15f;
+            
+
+        }
 
 
 
@@ -106,6 +130,9 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        throwDagger();
+
+
         theRB.velocity = new Vector2(movespeed * Input.GetAxis("Horizontal"), theRB.velocity.y);
 
         isGrounded = Physics2D.OverlapCircle(groundCheckPoint.position, .2f, whatIsGround);

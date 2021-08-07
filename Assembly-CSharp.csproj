@@ -63,6 +63,8 @@
     <Compile Include="Assets\Scripts\EmemyScripts\GroundEnemyBehaviour.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\CameraController.cs" />
+    <Compile Include="Assets\Scripts\InGame.cs" />
+    <Compile Include="Assets\Scripts\DaggerS.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

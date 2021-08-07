@@ -1,9 +1,5 @@
 sceneSetups:
-<<<<<<< HEAD
 - path: Assets/Scenes/DEBUG_AREA.unity
-=======
-- path: Assets/Scenes/LVL2.unity
->>>>>>> c0111a37452e746605a325df760b75a354dae7c3
   isLoaded: 1
   isActive: 1
   isSubScene: 0
