@@ -7,5 +7,6 @@ public class DaggerS : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         this.gameObject.SetActive(false);
+        Destroy(this.gameObject);
     }
 }
