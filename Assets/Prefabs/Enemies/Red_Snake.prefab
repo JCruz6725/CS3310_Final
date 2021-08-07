@@ -211,5 +211,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movement_direction: 0
-  snakeHP: 0
+  snakeHP: 1
   snake: {fileID: 6195929165817169869}

@@ -19,7 +19,7 @@ public class GroundEnemyBehaviour : MonoBehaviour
     void Start()
     {
         movement_direction = true;
-        snakeHP = 1;
+
     }
 
     void OnTriggerEnter2D(Collider2D collision)

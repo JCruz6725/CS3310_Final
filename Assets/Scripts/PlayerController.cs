@@ -30,10 +30,6 @@ public class PlayerController : MonoBehaviour
     {
         anim = GetComponent<Animator>();
         theSR = GetComponent<SpriteRenderer>();
-
- 
-
-
     }
 
     void OnTriggerEnter2D(Collider2D collision)
@@ -47,44 +43,21 @@ public class PlayerController : MonoBehaviour
         {
             playerLoseHealth();
         }
-
-
-
-
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-
         if (collision.gameObject.CompareTag("Enemy"))
         {
             playerLoseHealth();
-
             collision.gameObject.SetActive(false);
-                
-
         }
 
         if (collision.gameObject.CompareTag("Heart"))
         {
             playerGainHealth();
-
-
             collision.gameObject.SetActive(false);
-            
-
-
-
-
-
         }
-
-
-
-
-
-
-
     }
 
     void gameOver()
@@ -118,6 +91,16 @@ public class PlayerController : MonoBehaviour
             }
         }
     }
+
+
+    void throwDagge ( )
+    {
+
+
+
+    }
+
+
 
 
     // Update is called once per frame
