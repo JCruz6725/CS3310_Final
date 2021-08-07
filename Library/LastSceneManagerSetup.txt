@@ -1,5 +1,9 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/DEBUG_AREA.unity
+=======
+- path: Assets/Scenes/Intro.unity
+>>>>>>> refs/remotes/origin/master
   isLoaded: 1
   isActive: 1
   isSubScene: 0

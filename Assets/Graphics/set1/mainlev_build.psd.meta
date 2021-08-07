@@ -1,6 +1,9 @@
 fileFormatVersion: 2
 guid: 5c7f14aa7d3b1b447bb161b7e292d872
 TextureImporter:
+<<<<<<< HEAD:Assets/Graphics/set1/mainlev_build.png.meta
+  internalIDToNameTable: []
+=======
   internalIDToNameTable:
   - first:
       213: -3019605529627358628
@@ -1475,6 +1478,7 @@ TextureImporter:
   - first:
       213: -7596481756482705182
     second: mainlev_build_490
+>>>>>>> c0111a37452e746605a325df760b75a354dae7c3:Assets/Graphics/set1/mainlev_build.psd.meta
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -1505,7 +1509,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -1514,12 +1518,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -1541,7 +1545,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -1553,7 +1557,19 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -1562,6 +1578,9 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
+<<<<<<< HEAD:Assets/Graphics/set1/mainlev_build.png.meta
+    sprites: []
+=======
     sprites:
     - serializedVersion: 2
       name: mainlev_build_0
@@ -5994,6 +6013,7 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+>>>>>>> c0111a37452e746605a325df760b75a354dae7c3:Assets/Graphics/set1/mainlev_build.psd.meta
     outline: []
     physicsShape: []
     bones: []
