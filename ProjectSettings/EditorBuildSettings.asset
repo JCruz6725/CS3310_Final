@@ -11,4 +11,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Intro.unity
     guid: 1c58862c62fd07c439c4e797843fbc33
+  - enabled: 1
+    path: Assets/Scenes/LVL2.unity
+    guid: ba9bc9a0d8195e8459e1a911a3b75be1
+  - enabled: 1
+    path: Assets/Scenes/OptionsMenu.unity
+    guid: 72b2784480cd90342a8536ad009eaca8
+  - enabled: 1
+    path: Assets/Scenes/DEBUG_AREA.unity
+    guid: a7099f0386386384a96e5bf1d4c1f588
   m_configObjects: {}
