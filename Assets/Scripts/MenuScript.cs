@@ -5,12 +5,35 @@ using UnityEngine.SceneManagement;
 public class MenuScript : MonoBehaviour
 {
 
-    public void ChangeScene (string sceneName )
+    public string level;
+
+
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            changeLevel(level);
+            Debug.Log("change to " + level);
+        }
+    }
+
+   
+
+    public void changeLevel (string level )
+    {
+        SceneManager.LoadScene(level);
+    }
+
+    public void ChangeScene(string sceneName)
     {
 
         SceneManager.LoadScene(sceneName);
         Debug.Log("isPressed " + sceneName);
     }
+
+
+
 
     public void ExitApplication()
     {

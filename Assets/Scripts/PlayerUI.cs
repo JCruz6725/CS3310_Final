@@ -15,37 +15,11 @@ public class PlayerUI : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        UI_HP = p.PlayerHealth;    
+    
     }
 
     void FixedUpdate()
     {
-        if (p.PlayerHealth >= 5)
-        {
-
-        }
-        else if (p.PlayerHealth >= 4)
-        {
-
-        }
-        else if (p.PlayerHealth >= 3)
-        {
-
-        }
-
-        else if (p.PlayerHealth >= 2)
-        {
-
-        }
-        else if (p.PlayerHealth >= 1)
-        {
-
-        }
-        else if (p.PlayerHealth >= 0)
-        {
-
-        }
-
 
 
 
