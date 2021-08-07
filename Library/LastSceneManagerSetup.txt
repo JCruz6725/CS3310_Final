@@ -1,5 +1,13 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/LVL2.unity
+=======
+<<<<<<< HEAD
+- path: Assets/Scenes/LEVEL 4.unity
+=======
+- path: Assets/Scenes/MainMenu.unity
+>>>>>>> refs/remotes/origin/master
+>>>>>>> be95deb17df7391ac6436bdea7f3694e4cac0dee
   isLoaded: 1
   isActive: 1
   isSubScene: 0
