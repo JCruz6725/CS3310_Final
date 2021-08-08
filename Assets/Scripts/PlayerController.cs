@@ -105,17 +105,40 @@ public class PlayerController : MonoBehaviour
         {
             float x, y, z;
 
-            x = this.gameObject.transform.position.x + 1f;
             y = this.gameObject.transform.position.y;
             z = this.gameObject.transform.position.z;
 
-            Vector3 player_position = new Vector3(x, y, z);
+
 
             
-            Rigidbody2D projectile = Instantiate(Dagger_Projectile, player_position, Quaternion.identity);
             
             
-            projectile.velocity = transform.right * 15f;
+            if (theSR.flipX == false) {
+
+                x = this.gameObject.transform.position.x + 1f;
+
+                Vector3 player_position = new Vector3(x, y, z);
+
+                Rigidbody2D projectile = Instantiate(Dagger_Projectile, player_position, Quaternion.identity);
+
+                projectile.velocity = transform.right * 15f;
+
+            }
+           
+            else
+            {
+                x = this.gameObject.transform.position.x - 1f;
+
+                Vector3 player_position = new Vector3(x, y, z);
+
+                Rigidbody2D projectile = Instantiate(Dagger_Projectile, player_position, Quaternion.identity);
+
+                projectile.gameObject.transform.Rotate(new Vector3 (0,0,180));
+
+                projectile.velocity = -transform.right * 15f;
+
+            }
+
             
 
         }
