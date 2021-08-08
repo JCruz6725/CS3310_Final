@@ -58,7 +58,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\PlayerUI.cs" />
     <Compile Include="Assets\Scripts\EmemyScripts\ColliderScrips\DaggerDamage.cs" />
-    <Compile Include="Assets\Scripts\InGame.cs" />
+    <Compile Include="Assets\Scripts\ResetGame.cs" />
     <Compile Include="Assets\Scripts\MenuScript.cs" />
     <Compile Include="Assets\Scripts\EmemyScripts\EnemyController.cs" />
     <Compile Include="Assets\Scripts\EmemyScripts\ColliderScrips\WallBouncer.cs" />

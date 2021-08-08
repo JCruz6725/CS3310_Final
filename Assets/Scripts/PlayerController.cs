@@ -35,10 +35,6 @@ public class PlayerController : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Lava"))
-        {
-            playerLoseHealth();
-        }
 
         if (collision.gameObject.CompareTag("Poison"))
         {
@@ -59,15 +55,45 @@ public class PlayerController : MonoBehaviour
             playerGainHealth();
             collision.gameObject.SetActive(false);
         }
+        if (collision.gameObject.CompareTag("Lava"))
+        {
+            playerLoseHealth();
+        }
+        if (collision.gameObject.CompareTag("Killbox"))
+        {
+            InstaKill();
+
+        }
+
+
+
+
+        }
+
+
+
+
+    void InstaKill()
+    {
+
+        for (int i = 0; i < 5; i++)
+        {
+            if (PlayerHealthUI[i].gameObject.activeSelf)
+            {
+                PlayerHealthUI[i].gameObject.SetActive(false);
+                if (i == 4) { gameOver(); this.gameObject.SetActive(false); }
+                
+            }
+        }
     }
+
+
+
 
     void gameOver()
     {
         gameOverText.gameObject.SetActive(true);
         
-
-
-
     }
 
     void playerLoseHealth()
@@ -114,29 +140,19 @@ public class PlayerController : MonoBehaviour
             
             
             if (theSR.flipX == false) {
-
                 x = this.gameObject.transform.position.x + 1f;
-
                 Vector3 player_position = new Vector3(x, y, z);
-
                 Rigidbody2D projectile = Instantiate(Dagger_Projectile, player_position, Quaternion.identity);
-
                 projectile.velocity = transform.right * 15f;
-
             }
            
             else
             {
                 x = this.gameObject.transform.position.x - 1f;
-
                 Vector3 player_position = new Vector3(x, y, z);
-
                 Rigidbody2D projectile = Instantiate(Dagger_Projectile, player_position, Quaternion.identity);
-
                 projectile.gameObject.transform.Rotate(new Vector3 (0,0,180));
-
                 projectile.velocity = -transform.right * 15f;
-
             }
 
             

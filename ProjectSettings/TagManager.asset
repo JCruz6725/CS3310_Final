@@ -15,6 +15,7 @@ TagManager:
   - Wall
   - Dagger
   - Door
+  - KillPlayer
   layers:
   - Default
   - TransparentFX
