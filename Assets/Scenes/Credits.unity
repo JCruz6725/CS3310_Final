@@ -193,7 +193,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Level Design : Edwin Espinal'
+  m_Text: 'Level Design : Edwin Espinal, Roshan Panta'
 --- !u!222 &94831368
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -754,7 +754,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Programming : John Cruz, Danny Flores'
+  m_Text: 'Programming : John Cruz, Danny Flores, Roshan Panta'
 --- !u!222 &786916943
 CanvasRenderer:
   m_ObjectHideFlags: 0
